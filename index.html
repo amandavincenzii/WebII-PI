@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- Define a utilização do portugês Brasil para a identificação de outros sites -->
+
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Força o navegador Edge a executar a versão mais recente do HTML -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Coleta a largura do dispositivo permitindo a reponsividade da página -->
+
+        <meta charset="UTF-8">
+        <title>Minha Bibliografia</title> 
+
+        <link rel="stylesheet" href="style.css">
+        
+        <script>
+
+            function darkMode(){
+                
+            }
+
+            function tempo() {
+                
+            }
+
+
+
+        </script>
+    </head>
+    <body id="body" class="darkmode" onload="tempo()">
+        
+        <nav id="menu">
+            <!-- Rounded switch -->
+            <div id="dark-light">
+                <p id="dark-text">Dark</p>
+                <label class="switch">
+                    <input type="checkbox" onclick="darkMode()">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <ul>
+                <a href="#"><li><h2>Home</h2></li></a>
+                <a href="#"><li><h2>Biografia</h2></li></a>
+                <a href="#"><li><h2>Portfólio</h2></li></a>
+                <a href="#"><li><h2>Contato</h2></li></a>
+            </ul>
+        </nav>
+
+        <div id="capa" class="background-ps">
+            <div class="row">
+                <img src="./IMGs/sonic.png" alt="Foto do GitHub">
+
+                <h1>Lorem Ipsum é simplesmente uma maravilha!</h1>
+            </div>
+        </div>
+
+
+        <div id="biografia" class="background-sp">
+            <div class="grid-item text"><!-- "texto" faz a estilização -->
+                <h2>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</h2>
+            </div>
+
+            <div class="grid-item content">
+                <div class="grid-item-item1 item"><!-- "item" faz a estilização -->
+                    <img src="./IMGs/ifc.svg.png" alt="Logo da Instituição">
+                    <p>Curso Técnico em Informática Integrado ao Ensino Médio</p>
+                </div>
+
+                <figure class="grid-item-item2 item"><!-- "item" faz a estilização -->
+                    <img src="./IMGs/brasao_site_ufsc.svg" alt="Logo da Instituição">
+                    <figcaption>
+                        <p>Curso Técnico em Informática Integrado ao Ensino Médio</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        
+        <div id="portfolio" class="background-ps">
+            <div id="tecnologias">
+                <select name="" id="tec-ops">
+                    <option value="">Tecnologia</option>
+                    <option value="">Sustentabilidade</option>
+                    <option value="">Educação</option>
+                    <option value="">Empreendedorismo</option>
+                </select>
+
+                <div class="row">
+
+                    <div class="col left">
+                        <div class="top">
+                            <input type="checkbox" name="html">
+                            <label for="html">HTML</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="css">
+                            <label for="css">CSS</label>
+                        </div>
+                    </div>
+
+                    <div class="col center">
+                        <div class="top">
+                            <input type="checkbox" name="js">
+                            <label for="js">JavaScript</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="vue">
+                            <label for="vue">Vue JS</label>
+                        </div>
+                    </div>
+
+                    <div class="col right">
+                        <div class="top">
+                            <input type="checkbox" name="django">
+                            <label for="django">Django</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="python">
+                            <label for="python">Python</label>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div id="projetos">
+                <h2>Projetos</h2>
+                
+                <div id="slider">
+
+                    <figure class="slide">
+                        <img src="./IMGs/pequena.jpg" alt="">
+                        <figcaption>
+                            <h2>Portfólio</h2>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <p>Este trabalho foi desenvolvido durante a adaptação de Web II, com o intuito de ressaltar boa parte dos conteúdos de Desenvolvimento Web.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="slide">
+                        <img src="./IMGs/pequena.jpg" alt="">
+                        <figcaption>
+                            <h2>Nome</h2>
+                            <ul>
+                                <li>Tags</li>
+                            </ul>
+                            <p>Este trabalho foi desenvolvido durante a adaptação de Web II, com o intuito de ressaltar boa parte dos conteúdos de Desenvolvimento Web.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="slide">
+                        <img src="./IMGs/pequena.jpg" alt="">
+                        <figcaption>
+                            <h2>Nome</h2>
+                            <ul>
+                                <li>Tags</li>
+                            </ul>
+                            <p>Este trabalho foi desenvolvido durante a adaptação de Web II, com o intuito de ressaltar boa parte dos conteúdos de Desenvolvimento Web.</p>
+                        </figcaption>
+                    </figure>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div id="contato" class="background-sp">
+
+            <form action="#">
+                <div>
+                    <input type="text" placeholder="Nome" />
+                    <input type="text" placeholder="Sobrenome" />
+                    <input type="email" name="" id="" placeholder="E-mail">
+                    <input type="number" name="" id="" placeholder="Contato">
+                </div>
+
+                <select name="" id="">
+
+                </select>
+                <p>checkbox</p>
+                <textarea name="" id="" placeholder="Escreva sua necessidade..."></textarea>
+
+                <button type="submit">ENVIAR</button>
+            </form>
+
+        </div>
+
+
+
+    </body>
+
+</html>
