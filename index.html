@@ -16,6 +16,24 @@
         
         <script>
 
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+            showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("slide");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+            }
+
             function darkMode(){
                 let body = document.getElementById('body');
                 let texto = document.getElementById('dark-text');
@@ -133,7 +151,8 @@
 
             <div id="projetos">
                 <h2>Projetos</h2>
-                
+                <button onclick="plusDivs(-1)">Anterior</button>
+                <button onclick="plusDivs(1)">Próximo</button>
                 <div id="slider">
 
                     <figure class="slide">
@@ -149,10 +168,10 @@
                         </figcaption>
                     </figure>
 
-                    <figure class="slide">
-                        <img src="./IMGs/pequena.jpg" alt="">
+                    <figure class="slide" style="display: none;">
+                        <img src="./IMGs/mbappe.jpg" alt="">
                         <figcaption>
-                            <h2>Nome</h2>
+                            <h2>Slide1</h2>
                             <ul>
                                 <li>Tags</li>
                             </ul>
@@ -160,10 +179,10 @@
                         </figcaption>
                     </figure>
 
-                    <figure class="slide">
-                        <img src="./IMGs/pequena.jpg" alt="">
+                    <figure class="slide" style="display: none;">
+                        <img src="./IMGs/richas.jpg" alt="">
                         <figcaption>
-                            <h2>Nome</h2>
+                            <h2>Slide2</h2>
                             <ul>
                                 <li>Tags</li>
                             </ul>
